@@ -1,7 +1,7 @@
 import { Global, Module } from "@nestjs/common";
 import { PermissionService } from "./permission.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { Permission } from "src/users/roles/permissions/permissions.entity";
+import { Permission } from "src/modules/permissions/permissions.entity";
 
 @Global()
 @Module({
