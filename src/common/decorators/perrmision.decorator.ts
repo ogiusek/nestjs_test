@@ -1,6 +1,6 @@
 import { applyDecorators, CanActivate, ExecutionContext, Inject, Injectable, UnauthorizedException, UseGuards } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { PermissionService } from '../modules/permission/permission.service';
+import { PermissionService } from '../config/permission/permission.service';
 
 export function Permission(...required_permissions: string[]) {
   @Injectable()
