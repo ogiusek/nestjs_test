@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { BooksModule } from './books/books.module';
-import { UsersModule } from './users/users.module';
+import { BooksModule } from './modules/books/books.module';
+import { UsersModule } from './modules/users/users.module';
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
-import { JwtConfigModule } from './common/modules/jwt/jwt.module';
-import { typeOrmConfigModule } from './common/modules/typeorm/typeorm.module';
-import { PermissionModule } from './common/modules/permission/permission.module';
+import { JwtConfigModule } from './common/config/jwt/jwt.module';
+import { typeOrmConfigModule } from './common/config/typeorm/typeorm.module';
+import { PermissionModule } from './common/config/permission/permission.module';
 
 @Module({
   imports: [
